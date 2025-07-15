@@ -320,6 +320,82 @@ const swiper = new Swiper('.swiper', {
       </div>
     </section>
 </aside>
+
+<section
+  class="relative bg-cover bg-center bg-no-repeat min-h-[100vh] flex items-center justify-center text-white p-10"
+  style="background-image: url('./imgs/artes/Alma\ Carioca.jpg');"
+>
+  <!-- Sobreposição escura -->
+  <div class="absolute inset-0 bg-gradient-to-t from-[#1E1D18] via-[#1E1D18]/95 to-[#1E1D18]"></div>
+
+  <!-- Conteúdo + Formulário -->
+  <div class="relative z-10 max-w-4xl w-full">
+    <div class="text-center mb-10">
+      <h2 class="text-5xl font-bold mb-4 text-cliente reveal_bottom font-Montserrat">
+        Entre em Contato
+      </h2>
+      <p class="text-lg reveal_bottom leading-relaxed max-w-xl mx-auto">
+        Sua obra percorreu o Brasil e a Europa, e em sua nova mostra ela explora o
+        movimento e a forma em materiais como a resina, madeira e o bronze.
+      </p>
+    </div>
+
+    <!-- Formulário -->
+    <form class="bg-[#1E1D18]/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl max-w-2xl mx-auto space-y-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="nome">Nome</label>
+          <input
+            id="nome"
+            type="text"
+            placeholder="Seu nome completo"
+            class="w-full px-4 py-3 bg-transparent border border-white/40 rounded-xl placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1" for="email">E-mail</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="seu@email.com"
+            class="w-full px-4 py-3 bg-transparent border border-white/40 rounded-xl placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          />
+        </div>
+
+        <div class="sm:col-span-2">
+          <label class="block text-sm font-medium mb-1" for="assunto">Assunto</label>
+          <input
+            id="assunto"
+            type="text"
+            placeholder="Sobre o que deseja falar?"
+            class="w-full px-4 py-3 bg-transparent border border-white/40 rounded-xl placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          />
+        </div>
+
+        <div class="sm:col-span-2">
+          <label class="block text-sm font-medium mb-1" for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            rows="5"
+            placeholder="Escreva sua mensagem aqui..."
+            class="w-full px-4 py-3 bg-transparent border border-white/40 rounded-xl placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="text-center pt-4">
+        <button
+          type="submit"
+          class="inline-block bg-cliente  transition-all text- font-semibold px-8 py-3 rounded-full shadow-md"
+        >
+          Enviar Mensagem
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
     <style>
   .swiper-button-next,
   .swiper-button-prev {
