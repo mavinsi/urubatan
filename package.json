@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.10",
+    "flowbite": "^1.5.5",
+    "prefixer": "^0.0.3",
+    "tw-elements": "^1.0.0-alpha13"
+  }
+}

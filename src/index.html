@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urubatan Oliveira - A arte não é
+    da consciência
+    humana.
+    E sim, um
+    incondicional
+    momento de
+    espirito</title>
+  <link href="./imgs/faviicon.png" rel="Shortcut icon">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./custom.css" rel="stylesheet">
+
+</head>
+<style>
+  .swiper-container {
+    overflow: hidden;
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="preload" href="./assets/fontawesome/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+</noscript>
+
+<body class="text-black  bg-[#1E1D18] ">
+  <script defer>
+    window.addEventListener("scroll", () => {
+      const logoSection = document.getElementById("logo-section");
+      const navbar = document.getElementById("navbar");
+
+      if (window.scrollY > 50) {
+        logoSection.classList.add("opacity-0", "pointer-events-none");
+        navbar.classList.remove("-top-20");
+        navbar.classList.add("top-0");
+      } else {
+        logoSection.classList.remove("opacity-0", "pointer-events-none");
+        navbar.classList.add("-top-20");
+        navbar.classList.remove("top-0");
+      }
+    });
+
+    function scrollToNext() {
+      const nextSection = document.getElementById("next-section");
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  </head>
+
+  <body class="relative bg-[#1E1D18]">
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed w-full bg-[#1E1D18] shadow transition-all duration-500 -top-20 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold"><img class="w-32" src="./imgs/logo.png"></div>
+        <nav class="space-x-6">
+          <a href="#" class="text-cliente    hover:text-white">Início</a>
+          <a href="#" class="text-cliente hover:text-white">Sobre</a>
+          <a href="#" class="text-cliente hover:text-white">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section com Vídeo de Fundo -->
+    <section id="logo-section"
+      class="h-screen relative flex  flex-col items-center justify-center transition-opacity duration-500 overflow-hidden">
+
+      <!-- Vídeo de Fundo -->
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-[-2]">
+        <source src="./imgs/banner.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+
+      <!-- Overlay escurecendo o vídeo -->
+      <div class="absolute inset-0 bg-black bg-opacity-90 z-[-1]"></div>
+
+      <!-- Conteúdo -->
+      <div class="relative z-10 text-center text-white">
+        <img src="./imgs/logo.png" alt="Logo" class="w-96 mx-auto mb-8 drop-shadow-lg">
+
+        <!-- Botão de Scroll com Font Awesome -->
+        <button onclick="scrollToNext()"
+          class="mt-6 text-3xl text-white hover:text-gray-300 transition transform hover:scale-110 animate-bounce">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Próxima Seção -->
+     <aside class="bg-no-repeat bg-cover" style=" background-image: url(https://ozfilmes.com.br/wp-content/uploads/2024/04/Doidos-de-Pedra-204-1024x683.jpg);">
+    <section id="next-section"
+      class="min-h-screen bg-gradient-to-b   from-[#1E1D18]/95 via-[#1E1D18]/95 to-[#1E1D18] p-10 flex flex-col md:flex-row items-center justify-center gap-10">
+      <!-- Imagem -->
+
+      <!-- Texto -->
+      <div class="w-full md:w-1/2">
+        <h2 class=" text-2xl sm:text-4xl reveal_left  font-bold text-white  font-Montserrat mb-4">Quem é <b
+            class="font-extrabold  text-cliente">Urubatan Oliveira</b></h2>
+        <p class="text-gray-100 text-lg sm:text-xl reveal_left max-w-xl">
+          Nascido em Rondônia às margens do rio Madeira Mamoré, descendente mameluco da grande miscigenação brasileira,
+          Urubatan Oliveira Nunes é um artista plástico com mais de 45 anos de história e carreira nas artes plásticas.
+
+          Aos 65 anos retrata em suas obras a contemporaneidade do abstrato, trazendo a natureza, a vida e a
+          espiritualidade como suas maiores fontes de inspiração.
+
+          Suas inspirações dão vida a esculturas com curvas sinuosas que de forma paradoxal mesclam simetria e
+          assimetria fazendo com que cada obra seja única e especial.
+
+
+
+        </p>
+      </div>
+      <div class="w-full  rounded-lg shadow-white/10 shadow-lg reveal_bottom  md:w-1/3">
+        <img src="./imgs/Urubatan.jpg" alt="Urubatan Oliveira" class="w-full rounded-lg  h-auto  object-cover" />
+      </div>
+
+    </section>
+</aside>
+<section class="bg-[#1E1D18] py-16 px-6">
+  <h2 class="text-3xl md:text-5xl font-bold text-white font-Montserrat text-center mb-12">Conheça <span class="text-cliente">minhas obras.</span></h2>
+ <div class="max-w-7xl mx-auto px-4">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Alma Carioca.jpg" data-front="./imgs/artes/Alma Carioca.jpg" data-back="./imgs/artes/Alma Carioca(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Alma Carioca</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Coração -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Coração.jpg" data-front="./imgs/artes/Coração.jpg" data-back="./imgs/artes/Coração(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Coração</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Introspectivo -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Introspectivo.jpg" data-front="./imgs/artes/Introspectivo.jpg" data-back="./imgs/artes/Introspectivo(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Introspectivo</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- De pernas pro ar -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/de pernas pro ar.jpg" data-front="./imgs/artes/de pernas pro ar.jpg" data-back="./imgs/artes/de pernas pro ar(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">De pernas pro ar</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Madona -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Madona.jpg" data-front="./imgs/artes/Madona.jpg" data-back="./imgs/artes/Madona(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Madona</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Semente da Vida -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Semente da Vida.jpg" data-front="./imgs/artes/Semente da Vida.jpg" data-back="./imgs/artes/Semente da Vida(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Semente da Vida</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Cisne -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Cisne.jpg" data-front="./imgs/artes/Cisne.jpg" data-back="./imgs/artes/Cisne(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Cisne</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- Sereia -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/Sereia.jpg" data-front="./imgs/artes/Sereia.jpg" data-back="./imgs/artes/Sereia(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">Sereia</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <!-- O Broto -->
+        <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
+          <div class="w-full aspect-[5/5] relative">
+            <img src="./imgs/artes/o broto.jpg" data-front="./imgs/artes/o broto.jpg" data-back="./imgs/artes/o broto(1).jpg"
+              class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl text-white font-semibold mb-2">O Broto</h3>
+            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botões de navegação -->
+<div class="swiper-button-prev text-white hover:text-gray-200"></div>
+<div class="swiper-button-next text-white hover:text-gray-200"></div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+const swiper = new Swiper('.swiper', {
+  effect: 'coverflow',
+  grabCursor: true,
+    loop: true,
+
+  centeredSlides: true,
+  slidesPerView: 4, // padrão para telas grandes
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // para telas até 768px (mobile)
+    0: {
+      slidesPerView: 2,
+    },
+    // para tablets e acima (opcional)
+    768: {
+      slidesPerView: 2,
+    },
+    // para desktops
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+
+  </script>
+</section>
+    <section
+      class="relative bg-cover bg-center bg-no-repeat  min-h-[60vh] flex items-center justify-center text-white p-10"
+      style="background-image: url('./imgs/img.JPG');">
+      <!-- Sobreposição escura para melhor leitura -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#1E1D18] via-[#1E1D18]/80 to-[#1E1D18]"></div>
+
+      <!-- Conteúdo -->
+      <div class="relative z-10 max-w-3xl text-center">
+        <h2 class="text-5xl font-bold mb-4 text-cliente reveal_bottom font-Montserrat">Trajetória</h2>
+        <p class="text-lg reveal_bottom leading-relaxed">
+          Sua obra percorreu o Brasil e a Europa, e em sua nova mostra ela explora o
+          movimento e a forma em materiais como a resina, madeira e o bronze.
+        </p>
+      </div>
+    </section>
+<aside style="background-image: url(./imgs/banner2.JPG);" class=" bg-cover bg-no-repeat">
+    <section
+      class="min-h-screen bg-gradient-to-t backdrop-saturate-0 to-[#1D3023]/90 via-[#1D3023]/90 from-[#1D3023]/90 p-10 flex flex-col md:flex-row items-center justify-center gap-10">
+      <!-- Imagem -->
+      <!-- <div class="w-full md:w-1/3">
+        <img src="./imgs/artes/madonarender.png" alt="Inspirações de Urubatan Oliveira"
+          class="w-full h-auto rounded-lg  object-cover" />
+      </div> -->
+
+      <!-- Texto -->
+      <div class="w-full md:w-1/3">
+        <h2 class="text-4xl font-bold  text-white font-Montserrat mb-4">Inspirações</h2>
+        <p class="text-gray-200 text-lg leading-relaxed max-w-xl">
+          Autodidata, ele trilhou uma carreira de estudos pelas formas abstratas, dando vida através de esculturas ao
+          seu olhar sobre temas como natureza e a espiritualidade.
+          Aos 65 anos, Urubatan apresenta um trabalho maduro que mergulha em suas raízes conscientes e inconscientes,
+          dando vida à peças únicas.
+        </p>
+      </div>
+    </section>
+</aside>
+    <style>
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white !important;
+  }
+</style>
+
+
+
+<script>
+  document.querySelectorAll('.obra-img').forEach(img => {
+    const front = img.getAttribute('data-front');
+    const back = img.getAttribute('data-back');
+
+    img.addEventListener('mouseenter', () => {
+      img.src = back;
+    });
+
+    img.addEventListener('mouseleave', () => {
+      img.src = front;
+    });
+  });
+</script>
+
+
+
+    <script src="./assets/scrollreveal.js"></script>
+    <script>
+      ScrollReveal({ reset: false });
+      ScrollReveal().reveal('.reveal_bottom', { origin: 'bottom', distance: '400px', delay: 300 });
+      ScrollReveal().reveal('.reveal_bottom_slow', { origin: 'bottom', distance: '400px', delay: 600 });
+      ScrollReveal().reveal('.reveal_top', { easing: 'ease-in-out', origin: 'top', distance: '400px', delay: 300 });
+      ScrollReveal().reveal('.reveal_left_delay', { origin: 'left', distance: '100px', delay: 700 });
+      ScrollReveal().reveal('.reveal_left', { origin: 'left', distance: '100px', delay: 400, });
+      ScrollReveal().reveal('.reveal_right', { origin: 'right', distance: '100px', delay: 400 });
+      ScrollReveal().reveal('.reveal_spin', { duration: 1000, delay: 700, rotate: { x: 10, z: 200 } })
+      ScrollReveal().reveal('.scale_up', { scale: 0.85, delay: 500 });
+    </script>
+
+  </body>
+
+</html>
