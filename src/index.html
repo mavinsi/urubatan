@@ -60,8 +60,8 @@
         <div class="text-xl font-bold"><img class="w-32" src="./imgs/logo.png"></div>
         <nav class="space-x-6">
           <a href="#" class="text-cliente    hover:text-white">Início</a>
-          <a href="#" class="text-cliente hover:text-white">Sobre</a>
-          <a href="#" class="text-cliente hover:text-white">Contato</a>
+          <a href="#sobre" class="text-cliente hover:text-white">Sobre</a>
+          <a href="#contato" class="text-cliente hover:text-white">Contato</a>
         </nav>
       </div>
     </header>
@@ -99,7 +99,7 @@
 
       <!-- Texto -->
       <div class="w-full md:w-1/2">
-        <h2 class=" text-2xl sm:text-4xl reveal_left  font-bold text-white  font-Montserrat mb-4">Quem é <b
+        <h2 id="sobre" class=" text-2xl sm:text-4xl reveal_left  font-bold text-white  font-Montserrat mb-4">Quem é <b
             class="font-extrabold  text-cliente">Urubatan Oliveira</b></h2>
         <p class="text-gray-100 text-lg sm:text-xl reveal_left max-w-xl">
           Nascido em Rondônia às margens do rio Madeira Mamoré, descendente mameluco da grande miscigenação brasileira,
@@ -130,7 +130,7 @@
         <!-- Slide -->
         <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
           <div class="w-full aspect-[5/5] relative">
-            <img src="./imgs/artes/Alma Carioca.jpg" data-front="./imgs/artes/Alma Carioca.jpg" data-back="./imgs/artes/Alma Carioca(1).jpg"
+            <img src="./imgs/artes/AlmaCarioca.jpg" data-front="./imgs/artes/AlmaCarioca.jpg" data-back="./imgs/artes/AlmaCarioca(1).jpg"
               class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
           </div>
           <div class="p-5">
@@ -166,7 +166,7 @@
         <!-- De pernas pro ar -->
         <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
           <div class="w-full aspect-[5/5] relative">
-            <img src="./imgs/artes/de pernas pro ar.jpg" data-front="./imgs/artes/de pernas pro ar.jpg" data-back="./imgs/artes/de pernas pro ar(1).jpg"
+            <img src="./imgs/artes/depernasproar.jpg" data-front="./imgs/artes/de pernas pro ar.jpg" data-back="./imgs/artes/de pernas pro ar(1).jpg"
               class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
           </div>
           <div class="p-5">
@@ -190,7 +190,7 @@
         <!-- Semente da Vida -->
         <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
           <div class="w-full aspect-[5/5] relative">
-            <img src="./imgs/artes/Semente da Vida.jpg" data-front="./imgs/artes/Semente da Vida.jpg" data-back="./imgs/artes/Semente da Vida(1).jpg"
+            <img src="./imgs/artes/SementedaVida.jpg" data-front="./imgs/artes/SementedaVida.jpg" data-back="./imgs/artes/SementedaVida(1).jpg"
               class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
           </div>
           <div class="p-5">
@@ -226,7 +226,7 @@
         <!-- O Broto -->
         <div class="swiper-slide group rounded-2xl overflow-hidden border border-white/10 backdrop-blur bg-white/5 shadow-lg">
           <div class="w-full aspect-[5/5] relative">
-            <img src="./imgs/artes/o broto.jpg" data-front="./imgs/artes/o broto.jpg" data-back="./imgs/artes/o broto(1).jpg"
+            <img src="./imgs/artes/obroto.jpg" data-front="./imgs/artes/obroto.jpg" data-back="./imgs/artes/obroto(1).jpg"
               class="obra-img absolute inset-0 w-full h-full object-contain transition duration-500">
           </div>
           <div class="p-5">
@@ -310,8 +310,8 @@ const swiper = new Swiper('.swiper', {
 
       <!-- Texto -->
       <div class="w-full md:w-1/3">
-        <h2 class="text-4xl font-bold  text-white font-Montserrat mb-4">Inspirações</h2>
-        <p class="text-gray-200 text-lg leading-relaxed max-w-xl">
+        <h2 class="text-4xl font-bold  reveal_top text-white font-Montserrat mb-4">Inspirações</h2>
+        <p class="text-gray-200 text-lg reveal_top leading-relaxed max-w-xl">
           Autodidata, ele trilhou uma carreira de estudos pelas formas abstratas, dando vida através de esculturas ao
           seu olhar sobre temas como natureza e a espiritualidade.
           Aos 65 anos, Urubatan apresenta um trabalho maduro que mergulha em suas raízes conscientes e inconscientes,
@@ -323,14 +323,14 @@ const swiper = new Swiper('.swiper', {
 
 <section
   class="relative bg-cover bg-center bg-no-repeat min-h-[100vh] flex items-center justify-center text-white p-10"
-  style="background-image: url('./imgs/artes/Alma\ Carioca.jpg');"
+  style="background-image: url('./imgs/artes/AlmaCarioca.jpg  ');"
 >
   <!-- Sobreposição escura -->
   <div class="absolute inset-0 bg-gradient-to-t from-[#1E1D18] via-[#1E1D18]/95 to-[#1E1D18]"></div>
 
   <!-- Conteúdo + Formulário -->
   <div class="relative z-10 max-w-4xl w-full">
-    <div class="text-center mb-10">
+    <div id="contato" class="text-center mb-10">
       <h2 class="text-5xl font-bold mb-4 text-cliente reveal_bottom font-Montserrat">
         Entre em Contato
       </h2>
